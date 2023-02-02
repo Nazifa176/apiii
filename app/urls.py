@@ -24,8 +24,8 @@ from django.urls import path
 from . import views 
 
 urlpatterns = [
-    path('', views.MainViewSet.as_view()),
+    path('',views.SubCategoryViewSet.as_view() ),
     path('<int:pk>/', views.MainViewSet.as_view()),
-    path('sub/', views.SubCategoryViewSet.as_view()),
+    path('sub/',views.MainViewSet.as_view() ),
             
 ]
